@@ -1,6 +1,4 @@
 ---
-import { SITE } from '../site.ts'
-
 const currentYear = new Date().getFullYear()
 ---
 
@@ -8,7 +6,7 @@ const currentYear = new Date().getFullYear()
   <section class="py-8">
     <div class="container">
       <p>
-        &copy; {currentYear} - {SITE.author}
+        &copy; {currentYear} - {Astro.props.author}
       </p>
     </div>
   </section>
