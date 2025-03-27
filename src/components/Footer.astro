@@ -1,12 +1,17 @@
 ---
+interface Props {
+  copyright: string
+}
+
 const currentYear = new Date().getFullYear()
+const { copyright } = Astro.props
 ---
 
 <footer>
   <section class="py-8">
     <div class="container">
       <p>
-        &copy; {currentYear} - {Astro.props.author}
+        &copy; {currentYear} - {copyright}
       </p>
     </div>
   </section>
