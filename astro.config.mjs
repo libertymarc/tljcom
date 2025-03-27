@@ -7,7 +7,7 @@ import icon from 'astro-icon'
 // https://astro.build/config
 export default defineConfig({
   compressHTML: true,
-  site: 'https://accessible-astro.netlify.app',
+  site: 'https://thelibertyjourney.com',
   integrations: [
     mdx(),
     icon(),
@@ -21,7 +21,7 @@ export default defineConfig({
       preprocessorOptions: {
         scss: {
           logger: {
-            warn: () => {},
+            warn: () => { },
           },
         },
       },
